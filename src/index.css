@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --main-bg: #151441;
+  --main-color: #fff;
+  --main-line: aqua;
+  --main-input: rgb(235, 153, 37);
+}
+
+.app-header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-text {
+  color: var(--main-color);
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.square {
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 64px;
+  text-align: center;
+  color: var(--main-input);
+  font-weight: bolder;
+  padding: 30px;
+}
+
+.b-bottom-right {
+  border-right: 15px solid var(--main-line);
+  border-bottom: 15px solid var(--main-line);
+}
+
+.b-bottom {
+  border-bottom: 15px solid var(--main-line);
+}
+
+.b-right {
+  border-right: 15px solid var(--main-line);
+}
+
+.button {
+  border: none;
+  margin-top: 20px;
+  background: #000;
+  color : white;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+}
+
+.button:hover  {
+  box-shadow: 0 8px 6px -6px var(--main-line);
+}
+
+@media (max-width: 768px){
+  .square{
+    padding: 4px;
+  }
+}
